@@ -476,10 +476,15 @@ p{
     margin: 0;
 }
 
-.skills .skill_pair .container .card .back p{
+.skills .skill_pair .container .card .back .skill_content{
     text-align: justify;
-    margin: 0 10%;
+    margin: 10px;
     color: #fff;
+}
+
+.skills .skill_pair .container .card .back .skill_content ul li p{
+    margin: 0;
+    text-align: left;
 }
 
 .skill_pair{
@@ -508,7 +513,11 @@ p{
         height: 230px;
     }
 
-    .back p{
+    .skills .skill_pair .container .card .back .skill_content{
+        overflow: scroll;
+    }
+
+    .skills .skill_pair .container .card .back .skill_content ul li p{
         font-size: 14px;
     }
 
