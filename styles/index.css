@@ -988,8 +988,9 @@ p{
     }
 
     .contact .right .form-group button{
-        left: 28%;
-        font-size: small;
+        left: 35%;
+        font-size: 1rem;
+        padding: 5px 10px;
     }
 
 }
@@ -1044,8 +1045,9 @@ p{
     }
 
     .contact .right .form-group button{
-        font-size: smaller;
-        left: 12%;
+        font-size: 0.6rem;
+        left: 25%;
+    
     }
 }
 
@@ -1064,8 +1066,8 @@ p{
      }
 
      .contact .right .form-group button{
-        font-size: 0.7rem;
-        left: 10%;
+        font-size: 0.5rem;
+        left: 30%;
     }
 
     .contact .right .form-group h1{
@@ -1085,8 +1087,8 @@ p{
     }
 
     .contact .right .form-group button{
-        font-size: 0.5rem;
-        left: 10%;
+        font-size: 0.4rem;
+        left: 30%;
     }
 
     .contact .right .form-group h1{
