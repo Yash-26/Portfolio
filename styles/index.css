@@ -649,7 +649,7 @@ p{
     text-decoration: none;
     color: white;
     background: #27134e;
-    margin: 10%;
+    margin: 0 10%;
     justify-content: space-between;
     border-radius: 10px;
     transition: 0.5s;
@@ -723,8 +723,8 @@ p{
     }
 
     .project_container .project_card .content a{
-        top: 10px;
-        margin: 6%;
+        top: 0;
+        margin: 0 6%;
         padding: 6px;
     }
     
