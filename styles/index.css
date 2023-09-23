@@ -979,7 +979,7 @@ p{
     }
 
     .project_container .project_card:hover .content{
-        top:50px
+        top:50px;
     }
 
     .project_container .project_card .content a{
@@ -992,11 +992,6 @@ p{
 
 
 @media(max-width:426px){
-
-    .projects{
-        position: relative;
-        left: 10px;
-    }
 
     .projects h1{
         left: 15px;
