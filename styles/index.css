@@ -358,7 +358,7 @@ p{
 
     .introContent{
         width: 150%;
-        left: 67px;
+        left: 65px;
         
     
     }
@@ -610,7 +610,7 @@ p{
 
 @media(max-width:426px){
     .hire{
-        left: 20px;
+        left: 10px;
         /* width: 100%; */
     }
 
