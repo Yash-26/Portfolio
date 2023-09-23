@@ -1,3 +1,10 @@
+/* --text: #ffffff;
+--background: #100404;
+--primary: #5206e0;
+--secondary: #27134e;
+--accent: #49148B; */
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -169,7 +176,7 @@ p{
     color: white;
     width: 30%;
     text-align: left;
-    position:absolute;
+    position:relative;
     right: 200px;
     top: 40%;
     line-height:1.5;
@@ -194,10 +201,97 @@ p{
     color: #2196f3;
 }
 
-.intro .headImage img{
+.intro .headImage{
+    position: relative;
+    width: 500px;
+    height: 500px;    
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.intro .headImage::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff,#d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.intro .headImage:hover::before{
+    inset: -20px 0px;
+
+}
+
+.intro .headImage::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #27134E;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.intro .headImage .header_content{
+    
+    position: absolute;
+    inset: 30px;
+    border: 1px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro .headImage .header_content img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.intro .headImage:hover .header_content img{
+    opacity: 0;
+}
+
+.intro .headImage .header_content h2{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.intro .headImage .header_content h2 span{
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+}
+
+/* .intro .headImage .content img{
     margin: 0 0 15% 0;
     padding: 0;
+} */
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
 }
+
+
 
 /* .introContent p{
     background: var(--Linear-White, linear-gradient(107deg, rgba(255, 255, 255, 0.70) -6.96%, rgba(255, 255, 255, 0.00) 156.5%));
@@ -209,24 +303,29 @@ p{
 @media (max-width:1024px) {
 
     .introContent{
-        right:100px;
+        margin: 0 0 0 10px;
+        width: 40%;
+        right: 0;
+        
     }
     
-    .intro .headImage img{
+    .intro .headImage{
         width: 400px;
+        height: 400px;
     }
 }
 
 @media (max-width:768px) {
     .intro{
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     .introContent{
         position: relative;
         align-items: center;
-        left: 100px;
+        left: 15px;
         width: 70%;
         margin:15% 0;
     }
@@ -235,16 +334,19 @@ p{
         text-align: center;
     }
 
-    .intro .headImage img{
-        width: 300px;
-        align-items: center;
-        margin-left: 22%;
+    .introContent p{
+        text-align: justify;
     }
+
+    .intro .headImage{
+        left: 10px;
+    }
+
 }
 
 @media (max-width:426px){
 
-    .intro .headImage img{
+    .intro .headImage .header_content img{
         width: 200px;
         margin: 15% 20% 0 20%;
     }
@@ -254,6 +356,39 @@ p{
         left: -10px;
     
     }
+
+    .intro .headImage{
+        width: 250px;
+        height: 250px;
+    }
+
+    .intro .headImage .header_content img{
+        position: relative;
+    }
+
+    .intro .headImage .header_content h2{
+            top: 0;
+            font-size: 0.5rem;
+            letter-spacing: normal;
+       }
+    
+       .intro .headImage .header_content h2 span{
+            font-size: 0.15rem;
+            letter-spacing: normal;
+       } 
+
+    /* .intro .headImage{
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .intro .headImage .header_content img{
+        position: relative;
+        /* top: 33px;
+    } */
+
+   
 }
 
 
