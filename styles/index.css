@@ -358,7 +358,7 @@ p{
 
     .introContent{
         width: 150%;
-        left: 75px;
+        left: 67px;
         
     
     }
@@ -610,7 +610,7 @@ p{
 
 @media(max-width:426px){
     .hire{
-        left: 2rem;
+        left: 20px;
         /* width: 100%; */
     }
 
@@ -790,7 +790,7 @@ p{
     .skills{
         margin: 15% 0 0 0 ;
         position: relative;
-        left: 10px;
+        left: 0;
     }
     .skill_pair{
         display: flex;
@@ -996,7 +996,7 @@ p{
 
     .projects{
         position: relative;
-        left: 30px;
+        left: 0;
     }
 
     .projects h1{
@@ -1254,10 +1254,10 @@ p{
 
 @media(max-width:426px){
 
-    .contact{
+    /* .contact{
         position: relative;
-        left: 30px;
-    }
+        left: 10px;
+    } */
 
     .contact .left{
         display: none;
