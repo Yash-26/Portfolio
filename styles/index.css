@@ -119,10 +119,10 @@ p{
     background-color: white;
 }
 
-@media screen and (max-width:460px){
+@media screen and (max-width:426px){
     .toggle-button{
         display: flex;
-        right:1.5rem;
+        right:-2rem;
     }
 
     .navlinks{
@@ -133,7 +133,7 @@ p{
         flex-direction: column;
         position: absolute;
         top:3.5rem;
-        right:-1.2rem;
+        right:-4rem;
     }
 
     .navlinks li{
@@ -156,7 +156,7 @@ p{
     }
 
     .navbar .brand h2 a{
-        margin-left: 90%;
+        margin-left: 100%;
     }
 }
 
@@ -174,11 +174,11 @@ p{
 .introContent{
     font-size: 1.2rem;
     color: white;
-    width: 30%;
+    width: 50%;
     text-align: left;
     position:relative;
-    right: 200px;
-    top: 40%;
+    right: -90px;
+    top: 50px;
     line-height:1.5;
     
 }
@@ -320,13 +320,16 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        position: relative;
+        right: 60px;
     }
 
     .introContent{
         position: relative;
         align-items: center;
         left: 15px;
-        width: 70%;
+        width: 95%;
         margin:15% 0;
     }
 
@@ -346,20 +349,23 @@ p{
 
 @media (max-width:426px){
 
+    
+
     .intro .headImage .header_content img{
         width: 200px;
         margin: 15% 20% 0 20%;
     }
 
     .introContent{
-        width: 120%;
-        left: -10px;
+        width: 150%;
+        left: 80px;
+        
     
     }
 
     .intro .headImage{
         position: relative;
-        left: -15px;
+        left: 80px;
         width: 250px;
         height: 250px;
     }
@@ -439,6 +445,16 @@ p{
 
 }
 
+@media(max-width:376px){
+
+    .intro .headImage{
+        left: 80px;
+    }
+    .intro .introContent{ 
+        width: 140%;
+    }
+}
+
 @media(max-width:321px){
 
     .intro{
@@ -452,11 +468,11 @@ p{
     }
 
     .intro .introContent p{
-        width: 115%;
+        width: 105%;
     }
 
     .intro .headImage{
-        left: 10px;
+        left: 90px;
 
     }
 }
@@ -469,12 +485,12 @@ p{
 .hire{
     font-size: 1.2rem;
     color: white;
-    width: 40%;
+    width: 45%;
     text-align: center;
     justify-content: center;
     position:relative;
-    left:28.5rem;
-    margin: 0 0 3.5rem 0;
+    left:26rem;
+    margin: 100px 0 70px 0;
 }
 
 .hire h1{
@@ -581,22 +597,31 @@ p{
 
 @media(max-width:768px){
     .hire{
-        left: 13rem;
-        width: 50%;
+        left: 5.4rem;
+        width: 95%;
+    }
+
+    .myResume{
+        position: relative;
+        left: 65px;
     }
 }
 
 @media(max-width:426px){
     .hire{
-        left: 2.6rem;
-        width: 80%;
+        left: 2.3rem;
+        width: 100%;
+    }
+
+    .myResume{
+        left: 40px;
     }
 }
 
 @media(max-width:321px){
     .hire{
         left:2.5rem;
-        width: 85%;
+        width: 100%;
     }
 }
 
@@ -605,7 +630,7 @@ p{
 
 #Skills{
     color: white;
-    margin: 6% 0 0 0;
+    margin: 10% 0 0 0;
 }
 
 #Skills h1{
@@ -731,6 +756,20 @@ p{
 
 @media(max-width:769px){
 
+    #Skills{
+        margin-top: 100px;
+    }
+
+    #Skills .heading{
+        position: relative;
+        left: 60px;
+    }
+
+    .skills{
+        position: relative;
+        left: 50px;
+    }
+
     .container{
         width: 240px;
         height: 190px;
@@ -743,8 +782,14 @@ p{
 
 @media(max-width:426px){
 
+    #Skills .heading{
+        left: 50px;
+    }
+
     .skills{
         margin: 15% 0 0 0 ;
+        position: relative;
+        left: 30px;
     }
     .skill_pair{
         display: flex;
@@ -920,7 +965,8 @@ p{
 
     .projects h1{
         position: relative;
-        left: 40px;
+        left: 55px;
+        margin-top: 100px;
         margin-bottom: 80px;
     }
 
@@ -946,6 +992,11 @@ p{
 
 
 @media(max-width:426px){
+
+    .projects{
+        position: relative;
+        left: 30px;
+    }
 
     .projects h1{
         left: 15px;
@@ -1201,6 +1252,11 @@ p{
 }
 
 @media(max-width:426px){
+
+    .contact{
+        position: relative;
+        left: 30px;
+    }
 
     .contact .left{
         display: none;
