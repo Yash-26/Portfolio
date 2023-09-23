@@ -421,8 +421,8 @@ p{
 
 @media(max-width:426px){
     .intro{
-        margin-left: 80px;
-        width: 68%;
+        margin-left: 70px;
+        width: 66%;
     }
 }
 
@@ -431,6 +431,12 @@ p{
         padding: 0;
         margin-left: 70px;
     }
+
+    .intro .introContent{ 
+        width: 350px;
+        left: 70px;
+    }
+
     .intro .introContent h1{
         left: 40px;
     }
@@ -439,20 +445,15 @@ p{
         width: 105%;
     }
 
-    .intro .headImage{
+    /* .intro .headImage{
         left: 10px;
-    }
+    } */
 
-}
-
-@media(max-width:376px){
-
-    .intro .headImage{
+    /* .intro .headImage{
         left: 80px;
-    }
-    .intro .introContent{ 
-        width: 140%;
-    }
+    } */
+    
+
 }
 
 @media(max-width:321px){
@@ -609,12 +610,12 @@ p{
 
 @media(max-width:426px){
     .hire{
-        left: 2.3rem;
-        width: 100%;
+        left: 2rem;
+        /* width: 100%; */
     }
 
     .myResume{
-        left: 40px;
+        left: 20px;
     }
 }
 
@@ -783,13 +784,13 @@ p{
 @media(max-width:426px){
 
     #Skills .heading{
-        left: 50px;
+        left: 20px;
     }
 
     .skills{
         margin: 15% 0 0 0 ;
         position: relative;
-        left: 30px;
+        left: 10px;
     }
     .skill_pair{
         display: flex;
@@ -992,6 +993,11 @@ p{
 
 
 @media(max-width:426px){
+
+    .projects{
+        position: relative;
+        left: 30px;
+    }
 
     .projects h1{
         left: 15px;
