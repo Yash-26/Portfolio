@@ -411,8 +411,54 @@ p{
         flex-direction: column;
         text-align: center;
     }
+}
 
-   
+@media(max-width:426px){
+    .intro{
+        margin-left: 80px;
+        width: 68%;
+    }
+}
+
+@media(max-width:376px){
+    .intro{
+        padding: 0;
+        margin-left: 70px;
+    }
+    .intro .introContent h1{
+        left: 40px;
+    }
+
+    .intro .introContent p{
+        width: 105%;
+    }
+
+    .intro .headImage{
+        left: 10px;
+    }
+
+}
+
+@media(max-width:321px){
+
+    .intro{
+        padding: 0;
+        margin-left: 70px;
+    }
+
+    .intro .introContent h1{
+        position: relative;
+        left: 20px;
+    }
+
+    .intro .introContent p{
+        width: 115%;
+    }
+
+    .intro .headImage{
+        left: 10px;
+
+    }
 }
 
 
@@ -542,7 +588,7 @@ p{
 
 @media(max-width:426px){
     .hire{
-        left: 3rem;
+        left: 2.6rem;
         width: 80%;
     }
 }
