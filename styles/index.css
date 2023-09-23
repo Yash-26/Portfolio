@@ -1142,7 +1142,7 @@ p{
 @media(max-width:769px){
 
     .contact{
-        margin: 5% 10% 10% 15%;
+        margin: 5% 10% 10% 28%;
     }
 
     .contact .left h1{
@@ -1180,8 +1180,8 @@ p{
     }
 
     .contact .right .form-group input,textarea{
-        width: 80%;
-        padding: 6px;
+            width: 80%;
+            padding: 6px;
     }
 
     .contact .right .form-group .details{
@@ -1202,6 +1202,10 @@ p{
 
 @media(max-width:426px){
 
+    .contact .left{
+        display: none;
+    }
+
     .contact .left h1{
         font-size: smaller;
         display: none;
@@ -1215,25 +1219,40 @@ p{
         margin-top: 35%;
         position: relative;
         right: 10%;
-        
     }
 
     .contact .left .connect .social_icons ul li{
        height: 60px;
     }
 
-    .contact .right .form-group h1{
-        font-size: 1rem;
+    .contact .right{
+        width: 100%;
         position: relative;
-        right: 80px;
+        right: 40px;
+    }
+
+    .contact .right .form-group h1{
+        font-size: 1.4rem;
+        position: relative;
+        right: -10px;
     }
 
     .contact .right .form-group input{
+        font-size: 0.8rem;
+        width:100%;
+        padding: 20px;
+    }
+
+    .contact .right .form-group input::placeholder{
         font-size: 0.5rem;
+        padding: 0;
+        margin: 0;
     }
 
     .contact .right .form-group .message textarea{
         font-size: 0.5rem;
+        width: 100%;
+        padding: 8px;
     }
 
     .contact .right .form-group input,textarea{
@@ -1251,7 +1270,7 @@ p{
 
     .contact .right .form-group button{
         font-size: 0.6rem;
-        left: 25%;
+        left: 60%;
     
     }
 }
@@ -1272,7 +1291,7 @@ p{
 
      .contact .right .form-group button{
         font-size: 0.5rem;
-        left: 30%;
+        left: 60%;
     }
 
     .contact .right .form-group h1{
@@ -1291,13 +1310,18 @@ p{
         right: 20px;
     }
 
+    .contact .right{
+        right: 25px;
+    }
+
     .contact .right .form-group button{
         font-size: 0.4rem;
-        left: 30%;
     }
 
     .contact .right .form-group h1{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        left: 2px;
+        
     }
     
 }
