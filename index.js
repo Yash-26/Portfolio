@@ -19,7 +19,7 @@ function sendMail(){
    
    
    emailjs.send("service_gierjgb","template_tikjhyv",params).then(function(res){
-      alert("success");
+      alert("Thank You! I will reach out to you soon");
       location.reload();
    });
 }
