@@ -415,8 +415,10 @@ p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: center;
+    
     }
+
+    
 }
 
 @media(max-width:426px){
@@ -424,10 +426,14 @@ p{
         margin-left: 70px;
         width: 66%;
     }
+
+    .intro .introContent p{
+        text-align: center;
+    }
 }
 
 @media(max-width:376px){
-    .intro{
+    /* .intro{
         padding: 0;
         margin-left: 70px;
     }
@@ -443,7 +449,7 @@ p{
 
     .intro .introContent p{
         width: 105%;
-    }
+    } */
 
     /* .intro .headImage{
         left: 10px;
@@ -611,11 +617,17 @@ p{
 @media(max-width:426px){
     .hire{
         left: 10px;
+        
         /* width: 100%; */
+    }
+
+    .hire p{
+        text-align: center;
     }
 
     .myResume{
         left: 20px;
+        word-spacing: 0cm;
     }
 }
 
