@@ -910,7 +910,21 @@ p{
 
 .project_container .project_card:hover .content{
     top: 135px;
-    height: 250px;
+    height: 350px;
+}
+
+.project_container .project_card:hover .content p{
+    height:115px;
+    overflow-y: scroll;
+    
+}
+
+.project_container .project_card:hover .content p::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.project_container .project_card:hover .content p::-webkit-scrollbar-thumb{
+    background-color: transparent;
 }
 
 .project_container .project_card .content a{
@@ -952,10 +966,13 @@ p{
     .project_container .project_card .content{
         top:145px;
         font-size: 0.9rem;
+        
     }
 
     .project_container .project_card:hover .content p{
         margin: 0 15px 25px 15px;  
+        
+ 
     }
 
     .project_container .project_card .content a{
@@ -1027,6 +1044,10 @@ p{
 
     .project_container .project_card .content h2{
         margin-top: 20px;
+    }
+
+    .project_container .project_card:hover .content{
+        top:30px;
     }
 }
 
