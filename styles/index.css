@@ -172,7 +172,7 @@ p{
 }
 
 .introContent{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
     width: 50%;
     text-align: left;
@@ -306,6 +306,7 @@ p{
         margin: 0 0 0 10px;
         width: 40%;
         right: 0;
+        font-size: 1.2rem;
         
     }
     
@@ -874,6 +875,7 @@ p{
     border-radius: 12px;
     transition: 0.5s;
     overflow: hidden;
+    object-fit:cover;
 }
 
 .project_container .project_card .project_img img{
